@@ -6,13 +6,13 @@ Mobile Security Framework（MobSF）は、モバイルアプリケーション�
 
 ## ドキュメント一覧
 
-* [MobSFの起動（Docker）](running_mobsf_docker.md) — Docker での起動、URL、デフォルトログイン、ポート
-* [Develop（インストール・開発）](develop.md) — Python / setup / run / 更新 / Dynamic Analysis
-* [Dynamic Analyzer](dynamic_analyzer_docker.md) — Genymotion / AVD / Corellium / Jailbroken iOS
-* [Docker Options](docker_options.md) — volume、migrate、compose
-* [Configurations（設定）](configurations.md) — 環境変数一覧
-* [Extras（追加機能）](extras.md) — REST API、CI/CD、VirusTotal 等
-* [SSO](sso.md) — SAML2 / Okta
-* [FAQ（よくある質問）](faq.md) — 認証無効化、DB マイグレーション、APK インストール失敗、Docker 接続
+* [MobSFの起動（Docker）](/ja/running_mobsf_docker) — Docker での起動、URL、デフォルトログイン、ポート
+* [Develop（インストール・開発）](/ja/develop) — Python / setup / run / 更新 / Dynamic Analysis
+* [Dynamic Analyzer](/ja/dynamic_analyzer_docker) — Genymotion / AVD / Corellium / Jailbroken iOS
+* [Docker Options](/ja/docker_options) — volume、migrate、compose
+* [Configurations（設定）](/ja/configurations) — 環境変数一覧
+* [Extras（追加機能）](/ja/extras) — REST API、CI/CD、VirusTotal 等
+* [SSO](/ja/sso) — SAML2 / Okta
+* [FAQ（よくある質問）](/ja/faq) — 認証無効化、DB マイグレーション、APK インストール失敗、Docker 接続
 
 英語版のトップページ: [Getting Started](/)

@@ -22,7 +22,7 @@ docker run -it --rm \
 ## Dynamic Analysis（動的解析）
 ### 静的解析と動的解析の両方に対応して起動する
 
-MobSF を起動する前に、**[対応](dynamic_analyzer_docker.md)** している Android VM / エミュレータのいずれかを起動し、`MOBSF_ANALYZER_IDENTIFIER` を取得してください。iOS の場合は Corellium、または jailbreak 済みの iOS デバイスを使用します。
+MobSF を起動する前に、**[対応](/ja/dynamic_analyzer_docker)** している Android VM / エミュレータのいずれかを起動し、`MOBSF_ANALYZER_IDENTIFIER` を取得してください。iOS の場合は Corellium、または jailbreak 済みの iOS デバイスを使用します。
 
 ```
 docker run -it --rm \
@@ -32,7 +32,7 @@ docker run -it --rm \
     opensecurity/mobile-security-framework-mobsf:latest
 ```
 
-`<adb device identifier>` の正しい値の取得方法は [こちら](dynamic_analyzer_docker.md) を参照してください。
+`<adb device identifier>` の正しい値の取得方法は [こちら](/ja/dynamic_analyzer_docker) を参照してください。
 
 !> Ubuntu など Linux 系 OS では、Docker のバージョンが `20.10.0` 以上であることを確認してください。MobSF Docker コンテナ起動時には、追加オプション `--add-host=host.docker.internal:host-gateway` を付けてください。この設定がないと、ホストマシンの `localhost` 上で動いている Android VM / エミュレータと MobSF コンテナが通信できません。次の手順に従い、エミュレータへのトラフィック転送が必要になる場合もあります。
 
@@ -90,7 +90,7 @@ docker run -it --rm \
     opensecurity/mobile-security-framework-mobsf:latest
 ```
 
-詳細とプロキシ設定: [Dynamic Analyzer — Jailbroken iOS device](dynamic_analyzer_docker.md#jailbroken-ios-device-beta)。
+詳細とプロキシ設定: [Dynamic Analyzer — Jailbroken iOS device](/ja/dynamic_analyzer_docker#jailbroken-ios-device-beta)。
 
 ## MobSF チュートリアル
 

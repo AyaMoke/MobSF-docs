@@ -17,8 +17,8 @@
 
 上記のような例外が出る場合、多くの場合はデータベーススキーマが変わった新しいバージョンの MobSF を使っていることが原因です。デプロイ方式に応じて、データベースマイグレーションの手順に従ってください。
 
-* [Updating MobSF（ホストインストール向け）](develop.md#updating-mobsf)
-* [Updating MobSF（volume mount した Docker コンテナ向け）](docker_options.md#updating-mobsf-version-when-volume-mount-is-used)
+* [Updating MobSF（ホストインストール向け）](/ja/develop#updating-mobsf)
+* [Updating MobSF（volume mount した Docker コンテナ向け）](/ja/docker_options#updating-mobsf-version-when-volume-mount-is-used)
 
 ## Dynamic Analysis: APK のインストールに失敗する
 

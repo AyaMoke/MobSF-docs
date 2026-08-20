@@ -89,4 +89,4 @@ poetry run python manage.py create_roles
 
 その後 MobSF サーバーを再起動すると、データベースとして PostgreSQL が構成されます。
 
-Postgres と Nginx を使う MobSF の docker compose テンプレートは [こちら](docker_options.md?id=for-postgres-and-nginx-reverse-proxy-support) も参照してください。
+Postgres と Nginx を使う MobSF の docker compose テンプレートは [こちら](/ja/docker_options?id=for-postgres-and-nginx-reverse-proxy-support) も参照してください。
