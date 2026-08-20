@@ -55,6 +55,12 @@
       loadSidebar: true,
       loadNavbar: true,
       subMaxLevel: 2,
+      // Missing pages under /ja/ (and future locales) fall back to English at repo root
+      fallbackLanguages: ['ja'],
+      nameLink: {
+        '/ja/': '#/ja/',
+        '/': '#/',
+      },
       search: {
         maxAge: 86400000, // Expiration time in milliseconds (default: 1 day)
         paths: 'auto',    // Paths to be indexed (default: 'auto')

@@ -1,0 +1,10 @@
+<!-- docs/ja/_sidebar.md -->
+* [はじめに](/ja/)
+* [MobSFの起動](running_mobsf_docker.md)
+* [Dynamic Analyzer](dynamic_analyzer_docker.md)
+* [Docker Options](docker_options.md)
+* [Configurations（設定）](configurations.md)
+* [Extras（追加機能）](extras.md)
+* [Develop（インストール・開発）](develop.md)
+* [SSO](sso.md)
+* [FAQ（よくある質問）](faq.md)
