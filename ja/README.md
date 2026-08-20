@@ -1,18 +1,38 @@
-# はじめに
+# はじめに（Getting Started）
+
+![MobSF](https://cloud.githubusercontent.com/assets/4301109/20019521/cc61f7fc-a2f2-11e6-95f3-407030d9fdde.png)
 
 Mobile Security Framework（MobSF）は、モバイルアプリケーション（Android / iOS / Windows）のペネトレーションテスト、マルウェア解析、セキュリティ評価を自動化するオールインワンのフレームワークです。静的解析（Static Analysis）および動的解析（Dynamic Analysis）に対応しています。
 
-?> サイドバーから各ページへ移動できます。英語版との切り替えは上部ナビの **English** / **日本語** を使用してください。
+---
 
-## ドキュメント一覧
+### プロジェクト開発者（Project Developers）
 
-* [MobSFの起動（Docker）](/ja/running_mobsf_docker) — Docker での起動、URL、デフォルトログイン、ポート
-* [Develop（インストール・開発）](/ja/develop) — Python / setup / run / 更新 / Dynamic Analysis
-* [Dynamic Analyzer](/ja/dynamic_analyzer_docker) — Genymotion / AVD / Corellium / Jailbroken iOS
-* [Docker Options](/ja/docker_options) — volume、migrate、compose
-* [Configurations（設定）](/ja/configurations) — 環境変数一覧
-* [Extras（追加機能）](/ja/extras) — REST API、CI/CD、VirusTotal 等
-* [SSO](/ja/sso) — SAML2 / Okta
-* [FAQ（よくある質問）](/ja/faq) — 認証無効化、DB マイグレーション、APK インストール失敗、Docker 接続
+[Ajin Abraham](https://in.linkedin.com/in/ajinabraham) ![India](https://user-images.githubusercontent.com/4301109/37564171-6549d678-2ab6-11e8-9b9d-21327c7f5d5b.png) | [Magaofei](https://github.com/magaofei) ![China](https://user-images.githubusercontent.com/4301109/44515364-00bbe880-a6e0-11e8-944d-5b48a86427da.png) | [Matan Dobrushin](https://github.com/matandobr) ![Israel](https://user-images.githubusercontent.com/4301109/37564177-782f1758-2ab6-11e8-91e5-c76bde37b330.png) | [Vincent Nadal](https://github.com/superpoussin22) ![France](https://user-images.githubusercontent.com/4301109/37564175-71d6d92c-2ab6-11e8-89d7-d21f5aa0bda8.png)
 
-英語版のトップページ: [Getting Started](/)
+---
+
+### MobSF を支援する（Support MobSF）
+
+[![Donate to MobSF](https://user-images.githubusercontent.com/4301109/117404264-7aab5480-aebe-11eb-9cbd-da82d7346bb3.png)](https://opensecurity.in/donate)
+
+> MobSF が役に立ったなら、寄付で支援し、継続的な改善にご協力ください。オープンソースを作るのは簡単でも、維持するのは別の話です。
+
+---
+
+### MobSF e-Learning コースと認定（Courses & Certification）
+
+MobSF やその他の Android セキュリティツールを学べる、自分のペースで進められる e-Learning コースを 2 つ提供しています。
+
+- ![MobSF Course](https://user-images.githubusercontent.com/4301109/76344880-ad68b580-62d8-11ea-8cde-9e3475fc92f6.png) [Automated Mobile Application Security Assessment with MobSF - MAS](https://opsecx.com/index.php/product/automated-mobile-application-security-assessment-with-mobsf/)
+- ![Android Security Tools Course](https://user-images.githubusercontent.com/4301109/76344939-c709fd00-62d8-11ea-8208-774f1d5a7c52.png) [Android Security Tools Expert - ATX](https://opsecx.com/index.php/product/android-security-tools-expert-atx/)
+
+---
+
+### MobSF サポート（Support）
+
+- **無料サポート（Free Support）**: 限定的なサポート、質問、議論は Slack チャンネルへ。  
+  [![Join MobSF Slack](https://img.shields.io/badge/mobsf%20slack-join-green?logo=slack&labelColor=4A154B)](https://join.slack.com/t/mobsf/shared_invite/zt-3ephptj6c-OuDMatJ9z9MT0T_Vb~l2pg)
+
+- **エンタープライズサポート（Enterprise Support）**: 優先的な機能要望、ライブサポート、オンサイト研修については [Support Packages](https://opensecurity.in/#support) を確認してください。  
+  [![MobSF Support Packages](https://img.shields.io/badge/enterprise-support%20package-blue?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAABaCAMAAACbkBjCAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAkNQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////o1yoNQAAAMF0Uk5TAAQ1YH6IXzYFAUqq9P/1rU4CPdHWQ4X+jgOkro+hVWYR6vIajJvz+XN/z9sjLW6lrNPX+PsGHyE5TE9XWV1hW0k6LC7hs7SEhgr2sGRiFBCXJf38sgwOtmpoIiDf68vSGS+Z9yeR70RNvUEVfOa/WgdCR8XuUeeA8Du7Vporrx66SwlcqWV92g2HY+2Ki/GQJjxpM8TVcIGodjJ3ybETJOjUyiop4sxYkkVSGJ/pD6cdwlTOHNnIZ+B13bXkKL7NMOC0/xQAAAPPSURBVHic7dn5PxVRFADwY0sPN0t4Uj0vLQq9lkelRVFRKklZs+RRiiTtSbRoD9GuhdK+Ky3S9qf1Zu68bczcO5rjhz4f5yfnOud9mTszd+Y+gLH4f8PL28fXz893nP/4UQIMAYFBRIoJwSGho0CETSQeER6BLYRGGoksjFGTcIlouSDEZNRpmaJEEDIVkTApE4TEoBHmaWpG7HQsY4YaQchMJMI8S92IQ/pHZqsThMzBMeJZRgIKkcgiCJmLYcSwDQuGMY9tzMcwFrCNhQiEl5VtJCXrNxaxCUIW6zf8ecYS/UYKz1iq31jGM5brN1bwDB/9RirPQFhDuMdqpX5jFc9I0W+k8Yww/UY6z1it3zDzDLN+A9awiTUIBKxlGxkYRibbWIdhLGUbCLcrgPUTWETWegyDPSEbUAjYyDI24RjZWepE7GYcA3LUjSlIBGzJVSO2JmIZsG2UZ1wI1TUEYZ11RJ7KrFvz8Qy1S6QAkYBCZaMI0yhWNrZjGlCiRJSiElCmZJSPGWOGrtiheKFjGhW2yiVVO+XL+i6bz9pqHCB09x77B9YA1O6tcwHGffX7oYGQsnr9+2R5MeHiZx4QkmTTQSocsqUL+WHh5yNHs3UJxVHHpL87RBo5HphkbDwhvS770N9lNZ38Z6Gm2bXGmpyjLa7l1eI8cqdO/8tW7JmNHnutZ6XhtJzA1nOOx7bzbgUXLBdHKLRcKvU8iS4Lo2YL3de4cpXe1Ns8Sto7ro1A6AxMkl8KXQDXbc5tapLbuNsA0CSvumHy0gTkF96Ut9rjFtyWjRwFuDO8ruRuLVfoblLePLwH4bKRmwAFSpXW6E4WYC66rwjYw3fYY8MDgIMqxeWWh8qAobq1Uk0gJBJ6ej0GensAHqmWW1urDQoH6bE6YI82gD53pPeJvecpq+OZt5x4ztkJewEeSG+f0NTObIlL9SReDjtZZWEDd4QSoaqP2jRyX7kTr49wCPJGrKuqE5O34h0R3vGaYqvcjAxeNXlPC+k7biZNPnC7+l1EA7eYBNPKVjG5QxPuLgchH51GP79YetP/JCbxNDnOb5voIE7ya0kjvYboTSCInvsBGvocG5odGmrpkR2QsgF6vmvos0nGZw21X8TKCClrELOvGvq+UYK7SSwEnYIiKesSs0EtjXSl6dZSGi6WOr5ei3I7kTnRrd34LpYOSdmQmL1ANn6IpQlSRr+8mYpsiK9MyY672lbx4acZ2WgXKp84059C+gvZsAqVrt0ycWPsN7JhNHicrIPus6PBMJu0hPAcWOHM/giNKVr6zDAWI4i/nmw15nhs85kAAAAASUVORK5CYII=)](https://opensecurity.in/#support)
